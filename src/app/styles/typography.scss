@@ -1,0 +1,89 @@
+// Headings / Desktop
+@media (min-width: 1440px) {
+  h1 {
+    font-family: var(--f-bold);
+    font-size: 80px;
+    line-height: 110px;
+    letter-spacing: -4%;
+  }
+
+  h2 {
+    font-family: var(--f-bold);
+    font-size: 32px;
+    line-height: 120px;
+    letter-spacing: 0%;
+  }
+
+  h3 {
+    font-family: var(--f-bold); // --f-regular
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+
+  button {
+    font-family: var(--f-bold);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5%;
+  }
+}
+
+// Headings / Tablet
+@media (min-width: 768px) and (max-width: 1439px) {
+  h1 {
+    font-family: var(--f-bold);
+    font-size: 52px;
+    line-height: 110px; // возможно опечатка у дизайнера -> 110%
+    letter-spacing: -4%;
+  }
+
+  h2 {
+    font-family: var(--f-bold);
+    font-size: 28px;
+    line-height: 120px; // возможно опечатка у дизайнера -> 120%
+    letter-spacing: 0%;
+  }
+
+  h3 {
+    font-family: var(--f-bold);
+    font-size: 16px;
+    letter-spacing: 0%;
+  }
+
+  button {
+    font-family: var(--f-medium);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5%;
+  }
+}
+
+// Headings / Mobile
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-family: var(--f-bold);
+    font-size: 36px;
+    line-height: 110px;
+    letter-spacing: -4%;
+  }
+
+  h2 {
+    font-family: var(--f-bold);
+    font-size: 24px;
+    letter-spacing: 0%;
+  }
+
+  h3 {
+    font-family: var(--f-bold);
+    font-size: 20px;
+    letter-spacing: 0%;
+  }
+
+  button {
+    font-family: var(--f-medium);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5%;
+  }
+}
