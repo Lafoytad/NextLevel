@@ -9,7 +9,7 @@ export default function SimpleCorporateSite() {
   return (
     <div className={style.background}>
       <HeroSection />
-      {/* <RevenueVsUserSatisfaction /> */}
+      <RevenueVsUserSatisfaction />
       {/* <OurMonetizationPartners /> */}
       {/* <DetailedReports /> */}
       {/* <ContactForm /> */}
