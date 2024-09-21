@@ -1,0 +1,48 @@
+@import "/src/app/styles/variables.scss";
+@import "/src/app/styles/typography.module.scss";
+
+.section {
+  width: 100vw;
+  background-color: $gray04-color;
+  padding-top: 73.93px;
+  padding-bottom: 54.04px;
+  background-image: url("/laptop-reports.png");
+  background-repeat: no-repeat;
+  background-position: 81.5%;
+
+  & .wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    min-height: 519px;
+    height: 100%;
+
+    & .content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 497px;
+      height: 436px;
+      margin: 0 30px;
+
+      & .row {
+        display: flex;
+        gap: 16px;
+        margin-top: 20px;
+
+        &:first-of-type {
+          margin-top: 31px;
+        }
+
+        & img {
+          margin: 4px;
+        }
+      }
+
+      & button {
+        margin-top: 80px;
+      }
+    }
+  }
+}

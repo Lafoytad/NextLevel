@@ -11,7 +11,7 @@ export default function SimpleCorporateSite() {
       <HeroSection />
       <RevenueVsUserSatisfaction />
       <OurMonetizationPartners />
-      {/* <DetailedReports /> */}
+      <DetailedReports />
       {/* <ContactForm /> */}
     </div>
   );
