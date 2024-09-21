@@ -1,0 +1,11 @@
+@import "/src/app/styles/typography.module.scss";
+@import "/src/app/styles/variables.scss";
+
+.button {
+  background-color: $orange-color;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 10px;
+  color: $white-color;
+  cursor: pointer;
+}

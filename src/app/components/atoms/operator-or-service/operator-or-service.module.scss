@@ -1,0 +1,29 @@
+@import "/src/app/styles/variables.scss";
+
+.wrap {
+  width: 560px;
+  height: 60px;
+  display: flex;
+  background-color: $gray04-color;
+  border-radius: 14px;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    padding: 10px 66px;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    color: $gray01-color;
+
+    &:nth-child(2) {
+      padding: 10px 56px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $black-color;
+      color: $white-color;
+    }
+  }
+}

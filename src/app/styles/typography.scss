@@ -3,19 +3,19 @@
   h1 {
     font-family: var(--f-bold);
     font-size: 80px;
-    line-height: 110px;
-    letter-spacing: -4%;
+    line-height: 88px;
+    letter-spacing: -3px;
   }
 
   h2 {
     font-family: var(--f-bold);
     font-size: 32px;
-    line-height: 120px;
+    line-height: 38.4px;
     letter-spacing: 0%;
   }
 
   h3 {
-    font-family: var(--f-bold); // --f-regular
+    font-family: var(--f-regular); // --f-bold
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0%;
@@ -25,7 +25,7 @@
     font-family: var(--f-bold);
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -34,20 +34,21 @@
   h1 {
     font-family: var(--f-bold);
     font-size: 52px;
-    line-height: 110px; // возможно опечатка у дизайнера -> 110%
+    line-height: 57.2px;
     letter-spacing: -4%;
   }
 
   h2 {
     font-family: var(--f-bold);
     font-size: 28px;
-    line-height: 120px; // возможно опечатка у дизайнера -> 120%
+    line-height: 33.6px;
     letter-spacing: 0%;
   }
 
   h3 {
     font-family: var(--f-bold);
     font-size: 16px;
+    line-height: 20.4px;
     letter-spacing: 0%;
   }
 
@@ -55,7 +56,7 @@
     font-family: var(--f-medium);
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -64,19 +65,21 @@
   h1 {
     font-family: var(--f-bold);
     font-size: 36px;
-    line-height: 110px;
+    line-height: 39.6px;
     letter-spacing: -4%;
   }
 
   h2 {
     font-family: var(--f-bold);
     font-size: 24px;
+    line-height: 30.6px;
     letter-spacing: 0%;
   }
 
   h3 {
     font-family: var(--f-bold);
     font-size: 20px;
+    line-height: 25.5px;
     letter-spacing: 0%;
   }
 
@@ -84,6 +87,6 @@
     font-family: var(--f-medium);
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.5px;
   }
 }

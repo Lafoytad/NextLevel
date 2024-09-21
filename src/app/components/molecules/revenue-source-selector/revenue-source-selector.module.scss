@@ -1,0 +1,31 @@
+@import "/src/app/styles/typography.module.scss";
+
+.row {
+  margin: 0 auto;
+  margin-top: 180px;
+  max-width: 1220px;
+  width: 100%;
+  min-height: 212px;
+  height: 100%;
+  padding-bottom: 95px;
+
+  & .content {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+    & .title {
+      max-width: 460px;
+      width: 100%;
+    }
+
+    & .wrapper {
+      max-width: 560px;
+      width: 100%;
+
+      & .bodyText1 {
+        margin-top: 32px;
+      }
+    }
+  }
+}

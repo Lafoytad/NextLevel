@@ -1,0 +1,33 @@
+@import "/src/app/styles/typography.module.scss";
+
+.column {
+  margin: 0 auto;
+  margin-top: calc(100px + 32px);
+  max-width: 1220px;
+  width: 100%;
+  min-height: 443px;
+  height: 100%;
+
+  & .content {
+    margin: 0 30px;
+
+    & .title {
+    }
+
+    & .bodyText1 {
+      margin-top: 39px;
+      max-width: 626px;
+      width: 100%;
+    }
+
+    & .button {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .bodyText1 {
+    font-size: 24px;
+  }
+}

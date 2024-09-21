@@ -20,6 +20,13 @@
     line-height: 20px;
     letter-spacing: 0%;
   }
+
+  .button {
+    font-family: var(--f-bold);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
 }
 
 // Headings / Tablet
@@ -42,6 +49,13 @@
     line-height: 20px;
     letter-spacing: 0%;
   }
+
+  .button {
+    font-family: var(--f-medium);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
 }
 
 // Headings / Mobile
@@ -55,6 +69,7 @@
   .bodyText2 {
     font-family: var(--f-regular);
     font-size: 14px;
+    line-height: 17.85px;
     letter-spacing: 0%;
   }
 
@@ -63,5 +78,12 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0%;
+  }
+
+  .button {
+    font-family: var(--f-medium);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
   }
 }
