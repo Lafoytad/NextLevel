@@ -12,7 +12,7 @@ export default function SimpleCorporateSite() {
       <RevenueVsUserSatisfaction />
       <OurMonetizationPartners />
       <DetailedReports />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </div>
   );
 }
