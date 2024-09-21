@@ -10,7 +10,7 @@ export default function SimpleCorporateSite() {
     <div className={style.background}>
       <HeroSection />
       <RevenueVsUserSatisfaction />
-      {/* <OurMonetizationPartners /> */}
+      <OurMonetizationPartners />
       {/* <DetailedReports /> */}
       {/* <ContactForm /> */}
     </div>

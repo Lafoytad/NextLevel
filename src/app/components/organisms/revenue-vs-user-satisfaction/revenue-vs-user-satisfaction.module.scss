@@ -4,11 +4,12 @@
 .section {
   width: 100vw;
   background-color: $gray04-color;
+  padding-top: 109.2px;
+  padding-bottom: 95px;
 
   & .column {
     margin: 0 auto;
-    padding-top: 109.2px;
-    padding-bottom: 90.8px;
+    padding-bottom: 66px;
     max-width: 1220px;
     width: 100%;
     min-height: 443px;
