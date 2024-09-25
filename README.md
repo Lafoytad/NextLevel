@@ -1,6 +1,6 @@
 # Описание выполненной работы
 
-Для тестового задания был создан упрощённый корпоративный сайт с использованием **Next.js (SSG)**, **React** и **SCSS**. Вёрстка выполнена с учётом адаптивности по принципу Pixel Perfect с помощью **Figma** и **Photoshop**.
+Был создан упрощённый корпоративный сайт с использованием **Next.js (SSG)**, **React** и **SCSS**. Вёрстка выполнена с учётом адаптивности по принципу Pixel Perfect с помощью **Figma** и **Photoshop**.
 Макет можно просмотреть [здесь](https://www.figma.com/design/d59lCwSJpNunm55Jekcuw8/HR-Frontend?node-id=1-261&node-type=frame&t=4xl0f7AF4GfNbVjh-0).
 
 ## Навигация
@@ -35,6 +35,7 @@
 
 Проект соответствует всем требованиям макета и показал высокие результаты в тестах **Lighthouse**.
 
+---
 ---
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
