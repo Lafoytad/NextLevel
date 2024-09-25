@@ -3,14 +3,14 @@
   padding-top: 89.2px;
   padding-bottom: 106.07px;
 
-  & .wrapper {
+  .wrapper {
     margin: 0 auto;
     max-width: 1220px;
     width: 100%;
     min-height: 122px;
     height: 100%;
 
-    & .content {
+    .content {
       height: 122px;
       margin: 0 70px 0 30px;
       display: flex;
@@ -18,12 +18,105 @@
       justify-content: space-between;
       align-items: center;
 
-      & .row {
+      .row {
         display: flex;
         gap: 81px;
 
-        & img {
+        img {
           align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section {
+    padding-top: 46px;
+    padding-bottom: 73px;
+
+    .wrapper {
+      max-width: 688px;
+      min-height: 60px;
+
+      .content {
+        height: 60px;
+        margin: 0 44.5px 0 0;
+
+        & h3 {
+          width: 140px;
+        }
+
+        .row {
+          gap: 55px;
+
+          img {
+            &:nth-child(1) {
+              width: 121.41px;
+              height: 37.24px;
+            }
+
+            &:nth-child(2) {
+              width: 69.85px;
+              height: 48.51px;
+            }
+
+            &:nth-child(3) {
+              width: 131.4px;
+              height: 41.48px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section {
+    padding-top: 55px;
+    padding-bottom: 79px;
+
+    .wrapper {
+      max-width: 288px;
+      min-height: 60px;
+
+      .content {
+        min-height: 60px;
+        height: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & h3 {
+          width: 180px;
+        }
+
+        .row {
+          margin-top: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 8.87px;
+
+          img {
+            &:nth-child(1) {
+              width: 138.39px;
+              height: 43px;
+              order: 0;
+            }
+
+            &:nth-child(2) {
+              width: 84.64px;
+              height: 58.78px;
+              order: 2;
+            }
+
+            &:nth-child(3) {
+              width: 140px;
+              height: 47.32px;
+              order: 1;
+            }
+          }
         }
       }
     }

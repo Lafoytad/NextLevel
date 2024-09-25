@@ -5,7 +5,7 @@ import Button from "@/app/components/atoms/button/button";
 
 export default function DetailedReports() {
   return (
-    <section className={styles.section}>
+    <section id="section4" className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h2>Подробные отчёты для вас и правообладателей</h2>
@@ -27,7 +27,9 @@ export default function DetailedReports() {
               Ежемесячные автоматические отчёты для каждого правообладателя.
             </p>
           </div>
-          <Button color={"#1d1d1b"}>Заказать звонок</Button>
+          <Button mediaMaxWidth={"320"} color={"#1d1d1b"}>
+            Заказать звонок
+          </Button>
         </div>
       </div>
     </section>

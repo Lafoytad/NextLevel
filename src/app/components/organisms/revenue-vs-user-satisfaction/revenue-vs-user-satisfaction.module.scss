@@ -2,12 +2,12 @@
 @import "/src/app/styles/typography.module.scss";
 
 .section {
-  width: 100vw;
+  width: 100%;
   background-color: $gray04-color;
-  padding-top: 109.2px;
+  padding-top: 115px;
   padding-bottom: 95px;
 
-  & .column {
+  .column {
     margin: 0 auto;
     padding-bottom: 66px;
     max-width: 1220px;
@@ -15,20 +15,20 @@
     min-height: 443px;
     height: 100%;
 
-    & .content {
+    .content {
       margin: 0 30px;
 
-      & .title {
+      .title {
         text-align: center;
       }
 
-      & .wrapper {
+      .wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 80px;
 
-        & .block {
+        .block {
           display: flex;
           flex-direction: column;
           max-width: 300px;
@@ -38,23 +38,23 @@
           padding-left: 32px;
           padding-right: 40px;
 
-          & img {
+          img {
             margin: 4px;
           }
 
-          & h3 {
+          h3 {
             margin-top: 16px;
             width: 180px;
           }
 
-          & .bodyText2 {
+          .bodyText2 {
             max-width: 241px;
             width: 100%;
             margin-top: 16px;
           }
         }
 
-        & .block_center {
+        .block_center {
           position: relative;
           width: 100%;
           background-image: url("/twoArrayAndLogo.png");
@@ -62,11 +62,132 @@
           background-size: 100%;
           background-position: -50%;
 
-          & img {
+          img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 7px;
+
+    .column {
+      max-width: 688px;
+      min-height: 189px;
+
+      .content {
+        margin: 0;
+
+        .title {
+          margin: 0 auto;
+          max-width: 512px;
+        }
+
+        .wrapper {
+          margin-top: 60px;
+
+          .block {
+            max-width: 216px;
+            height: 189px;
+            padding-left: 24px;
+
+            img {
+              margin: 3px;
+              width: 18px;
+              height: 18px;
+            }
+
+            h3 {
+              width: 123px;
+            }
+
+            .bodyText2 {
+              max-width: 173px;
+            }
+          }
+
+          .block_center {
+            background-image: url("/twoArrayAndLogoV2.png");
+
+            img {
+              width: 53.33px;
+              height: 49.88px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 7px;
+
+    .column {
+      padding-bottom: 0px;
+      max-width: 288px;
+      min-height: 189px;
+
+      .content {
+        margin: 0;
+
+        .title {
+          margin: 0 auto;
+          max-width: 288px;
+          text-align: start;
+        }
+
+        .wrapper {
+          flex-direction: column;
+          margin-top: 60px;
+
+          .block {
+            max-width: 260px;
+            height: 160px;
+            justify-content: flex-start;
+            padding-left: 24px;
+            padding-right: 0px;
+
+            img {
+              margin: 3px;
+              width: 18px;
+              height: 18px;
+            }
+
+            h3 {
+              width: 260px;
+            }
+
+            .bodyText2 {
+              max-width: 320px;
+            }
+          }
+
+          .block_center {
+            margin: 24px 0;
+            height: 170px;
+            background-image: url("/twoArrayAndLogoV3.png");
+            transform: rotate(90deg);
+            background-size: 70%;
+            background-position: 37%;
+
+            img {
+              width: 53.33px;
+              height: 49.88px;
+              top: 50%;
+              left: 46%;
+              transform: translate(-50%, -50%) rotate(-90deg);
+            }
           }
         }
       }

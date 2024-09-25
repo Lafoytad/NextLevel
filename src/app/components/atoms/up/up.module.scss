@@ -1,0 +1,48 @@
+@import "/src/app/styles/variables.scss";
+
+.section {
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
+
+  .scrollToTopButton {
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    padding: 2px 0;
+
+    background-color: rgba(255, 255, 255, 0);
+    color: $gray01-color;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: $orange-color;
+      border-bottom: 1px solid $orange-color;
+
+      & .arrow {
+        background-image: url("/upV2.png");
+        transform: rotate(-45deg);
+      }
+    }
+
+    .arrow {
+      background-image: url("/up.png");
+      width: 11px;
+      height: 11px;
+      transition: 0.3s ease-in-out;
+      margin-left: 12px;
+      padding-right: 7px;
+    }
+  }
+}

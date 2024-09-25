@@ -8,13 +8,7 @@ export default function RevenueSourceSelector() {
         <h2 className={styles.title}>
           Дополнительные источники выручки для разных компаний
         </h2>
-        <div className={styles.wrapper}>
-          <OperatorOrService></OperatorOrService>
-          <p className={styles.bodyText1}>
-            Найдите идеальный баланс выручки и удовлетворённости пользователей с
-            платформой рекламной монетизации
-          </p>
-        </div>
+        <OperatorOrService></OperatorOrService>
       </div>
     </div>
   );

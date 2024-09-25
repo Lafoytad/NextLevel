@@ -1,0 +1,49 @@
+@import "/src/app/styles/variables.scss";
+
+.customCheckbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 21px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 1px solid $gray01-color;
+  border-radius: 4px;
+}
+
+// Стили для состояния checked
+.checkbox:checked + .checkmark {
+  background-color: $orange-color;
+  border-color: $orange-color;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none; // Скрываем по умолчанию
+}
+
+.checkbox:checked + .checkmark::after {
+  display: block; // Показать галочку, когда чекбокс отмечен
+}
+
+.checkmark::after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white; // Цвет галочки
+  border-width: 0 2px 2px 0; // Ширина галочки
+  transform: rotate(45deg); // Поворачиваем на 45 градусов
+}

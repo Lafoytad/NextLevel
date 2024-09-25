@@ -6,7 +6,7 @@ import novaSphere from "/public/NovaSphere.png";
 
 export default function OurMonetizationPartners() {
   return (
-    <section className={styles.section}>
+    <section id="section3" className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <h3>Наши партнёры по монетизации</h3>
