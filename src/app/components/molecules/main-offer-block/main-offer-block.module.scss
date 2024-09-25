@@ -1,0 +1,71 @@
+@import "/src/app/styles/typography.module.scss";
+
+.column {
+  margin: 0 auto;
+  margin-top: 200px;
+  max-width: 1220px;
+  width: 100%;
+  min-height: 443px;
+  height: 100%;
+
+  .content {
+    margin: 0 30px;
+
+    .bodyText1 {
+      margin-top: 39px;
+      max-width: 626px;
+      width: 100%;
+    }
+
+    .button {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .bodyText1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .column {
+    margin-top: 170px;
+    max-width: 688px;
+    min-height: 314px;
+
+    .content {
+      margin: 0;
+
+      .bodyText1 {
+        margin-top: 30px;
+        max-width: 393px;
+      }
+
+      .button {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .column {
+    margin-top: 115px;
+    max-width: 288px;
+
+    .content {
+      margin: 0;
+
+      .bodyText1 {
+        margin-top: 26px;
+        max-width: 288px;
+      }
+
+      .button {
+        margin-top: 112px;
+      }
+    }
+  }
+}

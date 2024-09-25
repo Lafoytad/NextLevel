@@ -1,0 +1,7 @@
+@import "/src/app/styles/variables.scss";
+
+.background {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: $gray03-color;
+}

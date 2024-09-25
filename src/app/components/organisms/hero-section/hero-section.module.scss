@@ -1,0 +1,18 @@
+.section {
+  width: 100vw;
+  background-image: url("/background.png");
+  background-repeat: no-repeat;
+  background-position: center 67px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section {
+    background-position: 10px -55px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section {
+    background-position: 10px -55px;
+  }
+}

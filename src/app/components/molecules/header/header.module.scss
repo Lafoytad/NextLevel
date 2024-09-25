@@ -1,0 +1,227 @@
+@import "/src/app/styles/typography.module.scss";
+@import "/src/app/styles/variables.scss";
+
+.header {
+  z-index: 10;
+  width: 100%;
+  background-color: $gray03-color;
+  position: fixed;
+  transition: 0.2s ease-in-out;
+
+  .section {
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    height: 72px;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      transform: translateY(-50%);
+      top: 50%;
+      margin-left: 30px;
+
+      .wrapper {
+        display: flex;
+
+        li {
+          padding: 6px 30px;
+
+          & a:hover {
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+              color: rgb(255, 0, 0);
+              text-decoration: underline;
+            }
+          }
+        }
+
+        & .active a {
+          color: rgb(255, 0, 0);
+        }
+      }
+
+      .rightTrue {
+        right: -50px;
+      }
+
+      .rightFalse {
+        right: -333px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .header {
+    .section {
+      max-width: 688px;
+
+      .content {
+        .wrapper {
+          transition: 0.4s ease-in-out;
+          position: absolute;
+          height: 110vh; //calc(156vh + 32px)
+          background-color: $white-color;
+          flex-direction: column;
+          justify-content: center;
+          top: -48px;
+        }
+
+        .burger {
+          border: 1px solid $orange-color;
+          background: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          span {
+            display: block;
+            background-color: $orange-color;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &.noActive {
+            span {
+              &:nth-child(1) {
+                position: absolute;
+              }
+              &:nth-child(2) {
+                position: absolute;
+              }
+              &:nth-child(3) {
+                position: absolute;
+              }
+            }
+          }
+
+          &.active {
+            span {
+              &:nth-child(1) {
+                position: absolute;
+                transform: translateY(0px) rotate(45deg);
+              }
+              &:nth-child(2) {
+                position: absolute;
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                position: absolute;
+                transform: translateY(0px) rotate(-45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    .section {
+      max-width: 688px;
+
+      .content {
+        margin: 0 10px;
+
+        .wrapper {
+          width: 283px;
+        }
+
+        .rightTrue {
+          right: -50px;
+        }
+
+        .rightFalse {
+          right: -333px;
+        }
+
+        .burger {
+          width: 44px;
+          height: 44px;
+          border-radius: 10px;
+
+          span {
+            width: 21.5px;
+            height: 2px;
+          }
+
+          &.noActive {
+            span {
+              &:nth-child(1) {
+                transform: translateY(-8px);
+              }
+              &:nth-child(2) {
+                transform: translateY(0px);
+              }
+              &:nth-child(3) {
+                transform: translateY(8px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    .section {
+      max-width: 288px;
+      height: 65px;
+
+      .content {
+        margin: 0;
+
+        .logo {
+          width: 113px;
+          height: 28.07px;
+        }
+
+        .wrapper {
+          width: 320px;
+        }
+
+        .rightTrue {
+          right: -16px;
+        }
+
+        .rightFalse {
+          right: -336px;
+        }
+
+        .burger {
+          width: 32px;
+          height: 32px;
+          border-radius: 7.27px;
+
+          span {
+            width: 15.65px;
+            height: 1.45px;
+          }
+
+          &.noActive {
+            span {
+              &:nth-child(1) {
+                transform: translateY(-5.82px);
+              }
+              &:nth-child(2) {
+                transform: translateY(0px);
+              }
+              &:nth-child(3) {
+                transform: translateY(5.82px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

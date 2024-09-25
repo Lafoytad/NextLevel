@@ -1,0 +1,126 @@
+@import "/src/app/styles/variables.scss";
+@import "/src/app/styles/typography.module.scss";
+
+.section {
+  width: 100%;
+  background-color: $gray04-color;
+  padding-top: 73.93px;
+  padding-bottom: 54.04px;
+  background-image: url("/laptop-reports.png");
+  background-repeat: no-repeat;
+  background-position: 81.5%;
+
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    min-height: 519px;
+    height: 100%;
+
+    .content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 497px;
+      height: 436px;
+      margin: 0 30px;
+
+      .row {
+        display: flex;
+        gap: 16px;
+        margin-top: 20px;
+
+        &:first-of-type {
+          margin-top: 31px;
+        }
+
+        & img {
+          margin: 4px;
+        }
+      }
+
+      & button {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section {
+    padding-top: 47px;
+    padding-bottom: 71px;
+    background-position: 105%;
+    background-size: 45%;
+
+    .wrapper {
+      max-width: 688px;
+      min-height: 353px;
+
+      .content {
+        width: 334px;
+        height: 353px;
+        margin: 0;
+
+        & h2 {
+          width: 260px;
+        }
+
+        .row {
+          & img {
+            width: 18px;
+            height: 18px;
+            margin: 3px;
+          }
+        }
+
+        & button {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section {
+    padding-top: 28px;
+    padding-bottom: 455px;
+    background-position: 30px 450px;
+    background-size: 135%;
+
+    .wrapper {
+      max-width: 288px;
+      min-height: 353px;
+
+      .content {
+        width: 288px;
+        min-height: 353px;
+        height: 100%;
+        margin: 0;
+
+        & h2 {
+          width: 220px;
+        }
+
+        .row {
+          img {
+            width: 18px;
+            height: 18px;
+            margin: 3px;
+          }
+
+          .bodyText1 {
+            font-size: 14px;
+            line-height: 17.85px;
+          }
+        }
+
+        button {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}

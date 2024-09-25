@@ -1,0 +1,58 @@
+@import "/src/app/styles/typography.module.scss";
+
+.row {
+  margin: 0 auto;
+  margin-top: 180px;
+  max-width: 1220px;
+  width: 100%;
+  min-height: 212px;
+  height: 100%;
+  padding-bottom: 95px;
+
+  .content {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      max-width: 460px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .row {
+    margin-top: 120px;
+    max-width: 688px;
+    min-height: 128px;
+    padding-bottom: 0px;
+
+    .content {
+      margin: 0;
+
+      .title {
+        max-width: 288px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .row {
+    margin-top: 68px;
+    max-width: 288px;
+    padding-bottom: 38px;
+
+    .content {
+      margin: 0;
+      flex-direction: column;
+
+      .title {
+        max-width: 288px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

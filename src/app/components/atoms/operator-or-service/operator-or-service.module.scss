@@ -1,0 +1,92 @@
+@import "/src/app/styles/variables.scss";
+@import "/src/app/styles/typography.module.scss";
+
+.wrapper {
+  max-width: 560px;
+  width: 100%;
+
+  .wrap {
+    width: 560px;
+    height: 60px;
+    display: flex;
+    background-color: $gray04-color;
+    border-radius: 14px;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      padding: 10px 66px;
+      border-radius: 10px;
+      transition: 0.4s ease-in-out;
+
+      &:nth-child(2) {
+        padding: 10px 50px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bodyText1 {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .wrapper {
+    max-width: calc(560px * 0.6);
+
+    .wrap {
+      width: calc(560px * 0.6);
+      height: calc(60px * 0.6);
+      border-radius: calc(14px * 0.6);
+      padding: calc(4px * 0.6);
+
+      h3 {
+        font-size: 14px;
+        line-height: 19px;
+        padding: calc(10px * 0.6) calc(66px * 0.6);
+        border-radius: calc(10px * 0.6);
+
+        &:nth-child(2) {
+          padding: calc(10px * 0.6) calc(50px * 0.6);
+        }
+      }
+    }
+
+    .bodyText1 {
+      margin-top: 13px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .wrapper {
+    max-width: calc(560px * 0.5143);
+
+    .wrap {
+      width: calc(560px * 0.5143);
+      height: calc(60px * 0.5143);
+      border-radius: calc(14px * 0.5143);
+      padding: calc(4px * 0.5143);
+
+      h3 {
+        font-size: 12px;
+        line-height: 15.3px;
+        padding: calc(10px * 0.5143) calc(66px * 0.5143);
+        border-radius: calc(10px * 0.5143);
+
+        &:nth-child(2) {
+          padding: calc(10px * 0.5143) calc(50px * 0.5143);
+        }
+      }
+    }
+
+    .bodyText1 {
+      margin-top: 22px;
+    }
+  }
+}
